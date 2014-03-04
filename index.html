@@ -1,5 +1,10 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+<!--
+  Created using jsbin.com
+  Source can be edited via http://jsbin.com/tesocola/1/edit
+-->
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Free One Page Theme for Bootstrap 3</title>
+    <title>Taller de Sonido escénico - Malena Graciosi</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -18,8 +23,360 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom Theme CSS -->
-    <link href="http://startbootstrap.com/templates/grayscale/css/grayscale.css" rel="stylesheet">
+    <link href="ahttp://startbootstrap.com/templates/grayscale/css/grayscale.css" rel="stylesheet">
 
+
+<style id="jsbin-css">
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media(min-width:767px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: #28c3ab;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #176e61;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active {
+    outline: 0;
+    background-color: rgba(255,255,255,.2);
+}
+
+.navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    outline: 0;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background-color: #000;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(http://startbootstrap.com/templates/grayscale/img/intro-bg.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.brand-heading {
+    font-size: 40px;
+}
+
+.intro-text {
+    font-size: 18px;
+}
+
+@media(min-width:767px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro-text {
+        font-size: 25px;
+    }
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.page-scroll .btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.page-scroll .btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0 {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0 {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.content-section {
+    padding-top: 100px;
+}
+
+.download-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(http://startbootstrap.com/templates/grayscale/img/downloads-bg.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#map {
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+}
+
+@media(min-width:767px) {
+    .content-section {
+        padding-top: 250px;
+    }
+
+    .download-section {
+        padding: 100px 0;
+    }
+
+    #map {
+        height: 400px;
+        margin-top: 250px;
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #28c3ab;
+    color: #28c3ab;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #28c3ab;
+    outline: 0;
+    color: #000;
+    background-color: #28c3ab;
+}
+
+.btn-huge {
+    padding: 25px;
+    font-size: 26px;
+}
+
+.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons>li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons>li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+</style>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
@@ -31,7 +388,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
+                    <i class="fa fa-play-circle"></i>  <span class="light">Taller</span> Diseño Sonoro
                 </a>
             </div>
 
@@ -43,13 +400,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#video">Porqué</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#download">Download</a>
+                      <a href="#about">Contenido del taller</a>
                     </li>
+      <li class="page-scroll">
+                        <a href="#malenagraciosi">Malena</a>
+                    </li>                  
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -64,7 +424,8 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Sonido Escénico</h1>
-                        <p class="intro-text">A free, premium quality, responsive one page Bootstrap theme created by Start Bootstrap.</p>
+                        <p class="intro-text">La dimensión sonora de lo espectacular.</p>
+
                         <div class="page-scroll">
                             <a href="#about" class="btn btn-circle">
                                 <i class="fa fa-angle-double-down animated"></i>
@@ -76,24 +437,64 @@
         </div>
     </section>
 
-    <section id="about" class="container content-section text-center">
+   
+
+    <section id="video" class="container  text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a premium quality, free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, all you need to do is download the template on the preview page. You can use this template for any purpose, personal or commercial.</p>
-                <p>This striking, black and white theme features stock photographs by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Map skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>With this template, just the slightest splash of color can make a huge impact on the overall presentation and design.</p>
+              <h2>Por qué <br/><small>un taller de Diseño Sonoro</small></h2>
+<p>
+              <object width="853" height="480"><param name="movie" value="//www.youtube.com/v/IM0i2kOPhmQ?version=3&amp;hl=es_MX&amp;rel=0&amp;cc_load_policy=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/IM0i2kOPhmQ?version=3&amp;hl=es_MX&amp;rel=0&amp;cc_load_policy=1" type="application/x-shockwave-flash" width="853" height="480" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+</p>       
+     </div>
+        </div>
+    </section>
+<section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <h3>Contenido</h3>
+<p>Este taller te da una mano para entender el <strong>diseño sonoro</strong> aplicado a las <a href="https://es.wikipedia.org/wiki/Artes_esc%C3%A9nicas" target="_blank">artes escénicas</a>, tomando como referencia la actividad teatral de Buenos Aires, en particular de las producciones de lo que se conoce como <em>circuito de los teatros independientes</em>.
+</p>
+<p>
+  Este proyecto nace de la necesidad de documentar técnicas que no suelen tener espacio en los estudios teatrales formales o académicos como tampoco en las criticas o comentarios de revistas especializadas.</p>
+              
+            
+                </p>
+              <h4>1. La dimensión sonora de lo espectacular</h4>
+                <p>La dimensión visual está muy explotada en el teatro, sobretodo desde el vestuario, la escenografía y la luz. Pero a diferencia de el cine, el espacio sonoro siempre queda relegado.</p>
+  <h4>2. Paisaje sonoro</h4>
+  <p>
+    El paisaje sonoro busca describir ante el espactador un espacio particular, ya sea que existe en la realidad y lo evoca o que sea un paisaje ficticio, propio del relato y participa en su construcción.
+  </p>
+  <h4>3. Análisis de un planteo sonoro	</h4>
+  <p>
+    Un hecho teatral puede tener un estrato argumental o varios simultáneamente. La música puede deliberadamente remarcar las diferencias entre esos estratos argumentales o no hacerlo.
+  </p>
             </div>
         </div>
     </section>
+  
+    <section id="aboutmalena" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
 
-    <section id="download" class="content-section text-center">
+            </div>
+        </div>
+    </section>  
+
+    <section id="malenagraciosi" class="content-section text-center">
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the download page at Start Bootstrap. You can also get the source code directly from GitHub if you prefer. Additionally, Grayscale is the first Start Bootstrap theme to come with a LESS file for easy color customization!</p>
-                    <a href="http://startbootstrap.com/grayscale" class="btn btn-default btn-lg">Visit Download Page</a>
+                <h2>Malena Graciosi</h2>
+
+                  <p><em>Instrumentista. Diseñadora sonora</em></p>
+                <p>Desde el año 2002 me dedico a la composición de música original y diseño sonoro para espectáculos teatrales. </p>
+                  <p>Hasta la fecha hice y produje la música original de <a target="_blank" href="http://www.alternativateatral.com/persona5802-malena-graciosi#obras">más de 20 espectáculos</a></p>
+                  <p>He sido distinguida con el Premio Argentores a la mejor música original de la temporada 2007 por la banda sonora del espectáculo <a target="_blank" href="http://www.alternativateatral.com/obra7759-tartufo">“Tartufo” de Moliere</a>, adaptación de Roberto Cossa en el Teatro El Payró, y con el Premio Florencio Sánchez a la mejor música original de la temporada 2011 por el diseño sonoro del espectáculo <a target="_blank" href="http://www.alternativateatral.com/obra19386-yepeto">“Yepeto, segunda versión”</a> de Roberto Cossa, Teatro Nacional Cervantes.</p>
+
+           
+                    <a target="_blank" href="http://www.alternativateatral.com/persona5802-malena-graciosi" class="btn btn-default btn-lg">Mi perfil en Alternativa Teatral</a>
                 </div>
             </div>
         </div>
@@ -102,35 +503,60 @@
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p>feedback@startbootstrap.com</p>
+                <h2>Contacto</h2>
+                <p>malena.graciosi@gmail.com</p>
                 <ul class="list-inline banner-social-buttons">
-                    <li><a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    <li><a href="https://www.facebook.com/malena.graciosi" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                     </li>
-                    <li><a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li><a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+            
+                    <li><a href="https://plus.google.com/106159075770684512399" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <div id="map"></div>
+
 
     <!-- Core JavaScript Files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- Google Maps API Key - You will need to use your own API key to use the map feature -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
 
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.3/jquery.fitvids.min.js">
+  </script>
+  
+  
+
+<script>
+$(function() {
+  $("body").fitVids();
+});
+
+//jQuery to collapse the navbar on scroll
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+});
+
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('.page-scroll a').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+</script>
 </body>
 
 </html>
-
